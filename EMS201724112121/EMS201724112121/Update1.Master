@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Update1.master.cs" Inherits="EMS201724112121.Update1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+        <form id="form1" runat="server">
+        <div>
+                <p>
+                    修改功能&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    <asp:Button ID="Button4" runat="server" OnClick="Button4_Click" Text="返回上一级" />
+                <hr />
+                <br />
+                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="设备修改" />
+                &nbsp;&nbsp;
+&nbsp;&nbsp;<asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="人员修改" />
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="部门修改" />
+&nbsp;<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

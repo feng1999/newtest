@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Retrieve.master.cs" Inherits="EMS201724112121.Retrieve" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+                <p>
+                    查询功能&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Button ID="Button4" runat="server" OnClick="Button4_Click" Text="返回上一级" />
+                <hr />
+                <br />
+                <asp:Button ID="Button1" runat="server" Text="设备查询" OnClick="Button1_Click" />
+&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;<asp:Button ID="Button2" runat="server" Text="人员查询" OnClick="Button2_Click" />
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Button ID="Button3" runat="server" Text="部门查询" OnClick="Button3_Click" />
+&nbsp;<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
